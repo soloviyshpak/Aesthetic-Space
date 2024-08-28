@@ -1,0 +1,85 @@
+/* Reset */
+@import 'reset';
+
+/* Fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter-Bold.woff2') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Global */
+* {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.18;
+}
+body {
+  background: #000;
+}
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.btn {
+  display: block;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 18px 65px;
+}
+
+/* Header */
+.header {
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  &__logo-img {
+    transition: scale .3s;
+    width: clamp(240px, 70vw, 345px);
+  }
+  &__logo-link {
+    margin-right: 42px;
+    &:hover {
+      .header__logo-img {
+        scale: 1.1;
+      }
+    }
+    
+  }
+  &__btn {
+    margin-left: auto;
+    margin-right: 160px;
+    transition: scale .3s;
+    width: clamp(300px, 34vw, 385px);
+    font-size: clamp(16px, 1.6vw,20px);
+    padding: 18px  clamp(35px, 3vw, 65px);
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+}
+
+
+/* Media */
+@import 'media';

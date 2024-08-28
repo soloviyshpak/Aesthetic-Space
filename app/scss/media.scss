@@ -1,0 +1,27 @@
+@media(max-width: 864px) {
+  .header {
+    &__inner {
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+    &__logo-link {
+      margin-right: auto;
+      order: -1;
+    }
+    &__menu-link {
+      order: -1;
+    }
+    &__btn {
+      margin-right: 0;
+      margin-left: 150px;
+      margin-top: 20px;
+    }
+  }
+}
+@media(max-width: 455px) {
+  .header {
+    &__btn {
+      margin: 20px auto 0;
+    }
+  }
+}
