@@ -1,4 +1,4 @@
-@media(max-width: 864px) {
+@media (max-width: 864px) {
   .header {
     &__inner {
       justify-content: flex-end;
@@ -17,8 +17,40 @@
       margin-top: 20px;
     }
   }
+  .footer {
+    &__bottom {
+      justify-content: center;
+    }
+    &__logo {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    &__btn {
+      margin-top: 15px;
+    }
+  }
 }
-@media(max-width: 455px) {
+@media (max-width: 666px) {
+  .footer {
+    &__title {
+      text-align: center;
+    }
+    &__contacts {
+      justify-content: center;
+    }
+    &__contacts-item {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 455px) {
   .header {
     &__btn {
       margin: 20px auto 0;

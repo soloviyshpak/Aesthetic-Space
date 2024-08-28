@@ -51,9 +51,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  } 
+  }
   &__logo-img {
-    transition: scale .3s;
+    transition: scale 0.3s;
     width: clamp(240px, 70vw, 345px);
   }
   &__logo-link {
@@ -63,23 +63,89 @@ body {
         scale: 1.1;
       }
     }
-    
   }
   &__btn {
     margin-left: auto;
     margin-right: 160px;
-    transition: scale .3s;
+    transition: scale 0.3s;
     width: clamp(300px, 34vw, 385px);
-    font-size: clamp(16px, 1.6vw,20px);
-    padding: 18px  clamp(35px, 3vw, 65px);
+    font-size: clamp(16px, 1.6vw, 20px);
+    padding: 18px clamp(35px, 3vw, 65px);
 
     &:hover {
       scale: 1.05;
     }
   }
-
 }
 
+/* Footer */
+.footer {
+  margin-bottom: 102px;
+
+  &__inner {
+    background: #8f7e70;
+    border-radius: 30px;
+    padding: 50px 49px 22px;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__contacts-item {
+    flex-basis: 50%;
+    align-self: start;
+
+    dt,
+    dd,
+    a {
+      font-size: clamp(18px, 5vw, 20px);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &:last-child {
+      margin-top: 4px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    display: block;
+    flex-basis: calc(50% + 10px);
+    transition: scale 0.3s;
+    margin-right: 10px;
+    img {
+      width: clamp(240px, 70vw, 345px);
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &__btn {
+    width: clamp(300px, 34vw, 380px);
+    font-size: clamp(16px, 1.6vw, 20px);
+    padding: 18px clamp(35px, 3vw, 65px);
+    transition: scale 0.3s;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+}
 
 /* Media */
 @import 'media';
