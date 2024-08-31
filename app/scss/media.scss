@@ -152,6 +152,16 @@
       margin-bottom: 0;
     }
   }
+
+  .statistics {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+
   .footer {
     &__title {
       text-align: center;
