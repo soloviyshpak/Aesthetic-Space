@@ -26,6 +26,10 @@
   font-size: 16px;
   line-height: 1.18;
 }
+sup {
+  font-size: 12px;
+  margin-top: -4px;
+}
 body {
   background: #000;
 }
@@ -333,10 +337,6 @@ body {
         bottom: 18px;
       }
     }
-    sup {
-      font-size: 12px;
-      margin-top: -4px;
-    }
   }
   &__slider-btn {
     position: absolute;
@@ -360,6 +360,70 @@ body {
   .swiper-button-next {
     right: 0;
     transform: rotate(2deg);
+  }
+}
+
+/* Tarrifs */
+.tariffs {
+  margin-bottom: 76px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__content-side {
+    width: 100%;
+  }
+  &__title {
+    text-align: center;
+    background-color: #3c342e;
+    border-radius: 30px;
+    padding: 26px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__list {
+    background-color: #8f7e70;
+    border-radius: 30px;
+    padding: 55px 20px 44px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__list-item {
+    list-style-type: disc;
+    max-width: 334px;
+    margin-left: 90px;
+  }
+  &__info {
+    display: flex;
+  }
+  &__size {
+    background-color: #3c342e;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 19px;
+    text-transform: uppercase;
+    flex-basis: 209px;
+    text-align: center;
+  }
+  &__content-side--left {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list--left {
+    height: 100%;
+    align-content: center;
+  }
+  &__btn {
+    transition: scale 0.3s;
+    &:hover {
+      scale: 1.05;
+    }
   }
 }
 
