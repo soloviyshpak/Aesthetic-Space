@@ -38,7 +38,7 @@ function fonts() {
 }
 
 function sprite() {
-  return src('app/img/*.svg')
+  return src('app/img/**/*.svg')
     .pipe(
       svgSprite({
         mode: {
@@ -53,15 +53,15 @@ function sprite() {
 }
 
 function images() {
-  return src(['app/img/src/*.*', '!app/img/src/*.svg'])
+  return src(['app/img/src/**/*.*', '!app/img/src/**/*.svg'])
     .pipe(newer('app/img/'))
     .pipe(avif({ quality: 50 }))
 
-    .pipe(src('app/img/src/*.*'))
+    .pipe(src('app/img/src/**/*.*'))
     .pipe(newer('app/img/'))
     .pipe(webp())
 
-    .pipe(src('app/img/src/*.*'))
+    .pipe(src('app/img/src/**/*.*'))
     .pipe(newer('app/img/'))
     .pipe(imagemin())
 
